@@ -1,0 +1,39 @@
+#div1{ 
+    text-align: center;
+    border: 0px solid black;
+    position: relative;
+    height:300px;
+    width:500px;
+    padding:25px;
+    margin-top: 5%;
+    margin-left: 28%;
+    border-radius: 10px;
+    background-color:whitesmoke;
+   
+  
+}
+#div2{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:limegreen;
+    
+}
+body{
+    background-color:silver;
+}
+input[type="text"]{
+    width:200px;
+    height:25px;
+}
+input[type="submit"]{
+    width: 100px;
+    background-color: limegreen;
+    height: 40px;
+    border-radius: 10px;
+}
+input[type="reset"]{
+    width: 100px;
+    background-color: limegreen;
+    height: 40px;
+    border-radius: 10px;
+}

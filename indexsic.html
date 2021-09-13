@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple intrest calculator</title>
+        <link href="style8.css" rel="stylesheet">
+    </head>
+    <body><span id="mylocation"></span>
+        <form name="myform">
+         <div id="div1">
+            <div id="div2">
+                <header><h2>Simple Intrest Calculator</h2></header>
+            </div><br><br>
+
+        Principal:<input type="text" name="principal"  placeholder="Enter Principal" required><br><br>
+        Rate     :<input type="text"  name="rate"   placeholder="Enter Rate" required><br><br>
+        Time     :<input type="text" name="time" placeholder="Enter the Time period" required><br><br>
+        <input type="submit" value="Check" onclick="fun()">
+        <input type="reset" value="Reset">
+        
+        
+
+         </div>
+        </form>
+        <footer><b>For more information:</b><address>email id-sarveshyadav1v@gmail.com</address></footer>
+        
+     <script>
+         
+         const d=new Date();
+         document.getElementById("mylocation").innerHTML=d;
+
+         var p=document.myform.principal.value;
+         var r=document.myform.rate.value;
+         var t=document.myform.time.value;
+         
+             
+         function fun()
+         {
+             if(document.myform.principal.value<=0)
+             {
+                 alert("Please Enter valid input");
+             }
+             else if(document.myform.rate.value<=0)
+             {
+                 alert("Please Enter valid input");
+             }
+             else if(document.myform.time.value<=0)
+             {
+                 alert("Please Enter valid input");
+             }
+             else
+             {
+           alert("Simple Intrest :"+document.myform.principal.value*document.myform.rate.value*document.myform.time.value/100);
+         }
+         }
+      
+
+
+
+
+
+
+
+     </script>
+
+    </body>
+</html>
